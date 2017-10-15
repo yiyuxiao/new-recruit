@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="flat-ui.css" rel="stylesheet">
+	<title>招新</title>
+	<style type="text/css">
+	div{color:black;}
+	span{color:red;}
+	body{background-image:url(3.jpg);
+		background-size:cover;
+		}
+	#div1{position:absolute;left:70px;top:100px;}
+	#div2{position:absolute;left:350px;top:100px;}
+	#div3{position:absolute;right:120px;top:120px;}
+	#div4{position:absolute;right:260px;top:280px;}
+	
+	</style>
+	</head>
+	<body>
+	<h2 style="text-align:center";>清泽心雨招新啦~</h2>
+	<div id="div1" class="form-group has-success">
+		<form method="post" action="save.php">
+		<label for="xingming">姓名<span>*</span>:<br /></label>
+		<input class="form-control input-sm" type="text" name="xingming" id="xingming" placeholder="你的大名" /><br /><br /><br />
+		<label for="zhuanye">专业班级<span>*</span>:<br /></label>
+		<input class="form-control input-sm" type="text" name="zhuanye" id="zhuanye" placeholder="你的专业班级" /><br />
+	</div>
+	<div id="div2" class="form-group has-success">
+		<form method="post" action="save.php">
+		<label for="tel">电话号码<span>*</span>:<br /></label>
+		<input class="form-control input-sm" type="text" name="tel" id="tel" placeholder="你的电话号码" /><br /><br /><br />
+		<label for="email">电子邮箱<span>*</span>:<br /></label>
+		<input class="form-control input-sm" type="text" name="email" id="email" placeholder="你的邮箱" /><br /><br /><br />
+		</form>
+		<button class="btn btn-hg btn-primary" type="submit">提交</button>
+		
+	</div>
+	<div id="div3" class="form-group has-success">
+		<form method="post" action="save.php">
+		<label for="jieshao">自我介绍:<br /></label>
+		<textarea class="form-control input-hg" id="jieshao" cols="30" rows="1" placeholder="做一个简短的自我介绍吧"></textarea>
+		</form><br /><br /><br /><br /><br /><br />
+		<button class="btn btn-hg btn-primary" type="reset">重置</button> 
+	</div>
+	<div id="div4">
+		<label>你想加入那个部门?<br /></label>
+		<select class="form-control select select-primary select-block mbl">
+		<optgroup label="网络安全部">
+			<option value="蓝之青">蓝之青</option>
+		</optgroup>
+		<optgroup label="视频集团">
+			<option value="微效坊">微效坊</option>
+			<option value="微影像">微影像</option>
+			<option value="电视台">电视台</option>
+			
+		</optgroup>
+	</div>
+	
+	</body>
+</html>
